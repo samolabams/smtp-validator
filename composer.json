@@ -1,0 +1,41 @@
+{
+    "name": "samolabams/smtp-validator",
+    "description": "A simple php package that validates your smtp credentials without sending a test mail",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/samolabams/smtp-validator",
+    "keywords": [
+        "samolabams",
+        "smtp",
+        "validation",
+        "validator",
+        "validate"
+    ],
+    "authors": [
+        {
+            "name": "Sam Olabamiji",
+            "email": "samolabams@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "~5.0",
+        "swiftmailer/swiftmailer": ">=5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Samolabams\\SmtpValidator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Samolabams\\SmtpValidator\\SmtpValidatorServiceProvider"
+            ],
+            "aliases": {
+                "SmtpValidator": "Samolabams\\SmtpValidator\\SmtpValidatorFacade"
+            }
+        }
+    }
+}
