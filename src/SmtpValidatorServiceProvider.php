@@ -41,6 +41,6 @@ class SmtpValidatorServiceProvider extends ServiceProvider
 
     public function provides()
     {
-    	return [SmtpValidator::class];
+    	return ['smtp-validator'];
     }
 }

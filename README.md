@@ -1,5 +1,5 @@
-# Smtp Validator
-This package can be used to validate your smtp credentials without sending a test mail
+# Laravel Smtp Validator
+This laravel package can be used to validate your smtp credentials without sending a test mail
 
 # Package Installation
 Require this package in your composer.json file and update composer.
@@ -20,7 +20,7 @@ Optionally, you can also use a facade for shorter code:
 ```
 
 # Usage
-You can create a new validation with the newValidation method passing your hostname and port(default port is 25) as the parameters, optionally add a username and password, encryption type and validate VOILA!!!.
+Create a new validation with the "newValidation" method with your hostname and port(default port is 25) as parameters, optionally add a username and password, encryption type and "validate" VOILA!!!.
 
 Use the App container
 
@@ -55,4 +55,4 @@ if ($response->success === true) {
 Please feel free to fork this package and contribute by submitting a pull request to enhance the functionalities.
 
 # License
-This Smtp Validator is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This Smtp Validator is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
